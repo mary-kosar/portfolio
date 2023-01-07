@@ -5,14 +5,26 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     border-bottom: 1px solid $c-border;
+    @include desktop-small {
+        grid-template-columns: 1fr;
+    }
+    @include tablet-small {        
+        padding: 50px 0;
+    }
     &__info {
         padding-left: 16px;
         padding-right: 27px;
         max-width: 432px;
         position: relative;
+        @include desktop-small {
+            max-width: 100%;
+        }
         &__music {
             position: absolute;
             top: -123px;
+            @include tablet-small {
+                top: -33px;
+            }
         }
         &__light {
             position: absolute;
@@ -22,16 +34,22 @@
 	}	
     &__title {
         padding-top: 26px;
+        @include tablet-small {
+            margin-bottom: 30px;
+        }
 	}
 	&__desc {
         @include text($font, 400, 18px, 27px, $c-body-light);
 	}	
 	&__img {
         position: relative;
+        @include desktop-small {
+            display: none;
+        }
         &__bg {
             position: absolute;
             right: 16px;
-        }
+        }            
         &__body {
             position: absolute;
             top: 224px;

@@ -1,9 +1,22 @@
 .projects-wrapper {
     padding-top: 132px;
+    @include tablet-small {
+        padding-top: 50px;
+    }
 }
 .projects {
     padding: 179px 121px 151px 140px;
     background-image: url("img/bg/bg3.png");
+    z-index: 3;
+    position: relative;
+    &__bg {
+        background: $c-bg-body;
+        z-index: 2;
+        position: relative;
+      }
+    @include tablet-small {
+        padding: 30px 20px;
+    }
     &__title {
         margin-bottom: 48px;
     }
@@ -11,9 +24,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 48px;
+        @include desktop-small {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
     }
 }
 .card {
+    display: flex;
     padding: 50px;
     position: relative; 
     background: $c-bg-card;

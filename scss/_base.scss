@@ -30,6 +30,12 @@ li {
 .pd-x {
   padding-left: 96px;
   padding-right: 96px;
+  @include tablet-small {
+    & {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }
 img {
   max-width: 100%;
@@ -45,7 +51,8 @@ img {
     display: flex;
     align-items: center;
     &__primary__link {
-      display: inline-block;
+      display: block;
+      height: 100%;
       @include text($font, 700, 18px, 27px, $c-body);
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     }
@@ -60,7 +67,8 @@ img {
     align-items: center;
     gap: 10px;
     &__dark__link {
-      display: inline-block;
+      display: block;
+      height: 100%;
       @include text($font, 700, 18px, 27px, $c-body);
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     }
@@ -68,7 +76,30 @@ img {
 }
 .title {
   @include text($font, 700, 64px, 96px, $c-white);
+  @include tablet-small {
+    font-size: 32px;
+    line-height: 32px;
+  }
   span {
     color: $c-primary;
   }
 }
+.header__wrapper,
+.about__wrapper {
+    background-color: $c-bg-body;
+    border-bottom: 1px solid $c-border;
+
+}
+.vl {
+  border: 1px solid rgba(238, 238, 238, 0.1);
+  height: 100vh;
+  position: fixed;
+  left: 34%;
+  margin-left: -3px;
+  top: 0;
+  z-index: 1;
+  @include tablet-small {
+    display: none;
+  }
+}
+

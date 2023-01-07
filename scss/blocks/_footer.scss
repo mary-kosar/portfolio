@@ -1,13 +1,17 @@
 .footer {
     padding: 35px 0;
-    &__nav {
+    @include  tablet-small {
+        padding: 20px 0;
     }
 }
-.nav {
+.footer .nav {
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
     justify-content: center;
+    @include tablet-small {
+        gap: 20px;
+    }
     &__li {
         padding: 10px;
     }

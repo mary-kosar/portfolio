@@ -11,12 +11,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
 </head>
-<body id="body">
+<body id="body">   
+    <div class="vl"></div>
     <!-- header -->
     <section class="header__wrapper">
         <div class="container pd-x">
             <header class="header">
-                <a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+                <a href="https://github.com/mary-kosar" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
                 <div class="header__burger">
                     <span id="icon-menu" onclick="navToggle()" class="material-icons _active">
                         menu
@@ -25,16 +26,16 @@
                 <nav id="nav" class="header-nav">
                     <ul class="header-nav__ul">
                         <li class="header-nav__li">
-                            <a href="#" class="header-nav__a _active">Home</a>
+                            <a href="https://github.com/mary-kosar" class="header-nav__a _active">Home</a>
                         </li>
                         <li class="header-nav__li">
-                            <a href="#" class="header-nav__a">About Me</a>
+                            <a href="#about__me" class="header-nav__a">About Me</a>
                         </li>
                         <li class="header-nav__li">
-                            <a href="#" class="header-nav__a">Projects</a>
+                            <a href="#project" class="header-nav__a">Projects</a>
                         </li>
                         <li class="header-nav__li">
-                            <a href="#" class="header-nav__a">Contact me</a>
+                            <a href="#contact" class="header-nav__a">Contact me</a>
                         </li>
                     </ul>
                     <span id="icon-close" onclick="navToggle()" class="material-icons">
@@ -46,6 +47,7 @@
     </section>	
     <!-- main-screen -->
     <section class="container pd-x">
+        <a name="home"></a>
         <div class="main-screen">
             <div class="main-screen__info">
                 <img class="main-screen__arrow" src="img/bg/arrow.png" alt="arrow">
@@ -56,19 +58,21 @@
                 </div>
                 <div class="main-screen__btn btn">
                     <div class="btn__primary">
-                        <a href="#" class="btn__primary__link">Hire me</a>
+                        <a href="#contact" class="btn__primary__link">Hire me</a>
                     </div>
                     <div class="btn__dark">
-                        <a href="#" class="btn__dark__link">Download CV</a>
+                        <a href="img/cv_kosar_m.pdf" download class="btn__dark__link">Download CV</a>
                         <span class="material-symbols-outlined">
                             download
                         </span>
                     </div>
                 </div>
                 <div class="main-screen__scroll">
-                    <span class="material-symbols-outlined">
-                        south
-                    </span>
+                    <a href="#project" class="main-screen__scroll__link">
+                        <span class="material-symbols-outlined">
+                            south
+                        </span>
+                    </a> 
                 </div>
             </div>
             <img class="main-screen__bg" src="img/bg/bg1.png" alt="relax">
@@ -76,57 +80,150 @@
         </div>
     </section>
     <!-- about me -->
-    <section class="container pd-x">
-        <div class="about">
-            <div class="about__info">
-                <div class="about__info__img">
-                    <img class="about__info__music" src="img/bg/music.png" alt="music">
-                    <img class="about__info__light" src="img/bg/lightbulb.png" alt="light">
+    <div class="about__wrapper">
+        <section class="container pd-x">
+            <a name="about__me"></a>
+            <div class="about">
+                <div class="about__info">
+                    <div class="about__info__img">
+                        <img class="about__info__music" src="img/bg/music.png" alt="music">
+                        <img class="about__info__light" src="img/bg/lightbulb.png" alt="light">
+                    </div>
+                    <div class="about__title title">About <span>me</span></div>
+                    <div class="about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </div>                
                 </div>
-                <div class="about__title title">About <span>me</span></div>
-                <div class="about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </div>                
+                <div class="about__img">
+                    <img src="img/bg/bg2.png" alt="relax" class="about__img__bg">
+                    <img src="img/bg/bg_body2.png" alt="body" class="about__img__body">
+                </div>
             </div>
-            <div class="about__img">
-                <img src="img/bg/bg2.png" alt="relax" class="about__img__bg">
-                <img src="img/bg/bg_body2.png" alt="body" class="about__img__body">
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    
     <!-- projects -->
     <section class="container">
+        <a name="project"></a>
         <div class="projects-wrapper">
-            <div class="projects">
-                <h2 class="projects__title title">My recent <span>works</span></h2>
-                <div class="projects__cards">
-                    <div class="card">
-                        <img class="card__img" src="img/projects/img19.png" alt="19th project">
-                        <div class="card__desc">
-                            <h4 class="card__title">Learn UX Design</h4>
-                            <p class="card__text">This project includes burger, slider, accordion with js</p>
-                            <a href="#" class="card__btn btn__primary">Details</a>
-                        </div>                        
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="img/projects/img19.png" alt="19th project">
-                        <div class="card__desc">
-                            <h4 class="card__title">Learn UX Design</h4>
-                            <p class="card__text">This project includes burger, slider, accordion with js</p>
-                            <a href="#" class="card__btn btn__primary">Details</a>
-                        </div>                        
-                    </div>
-                    <div class="card">
-                        <img class="card__img" src="img/projects/img19.png" alt="19th project">
-                        <div class="card__desc">
-                            <h4 class="card__title">Learn UX Design</h4>
-                            <p class="card__text">This project includes burger, slider, accordion with js</p>
-                            <a href="#" class="card__btn btn__primary">Details</a>
-                        </div>                        
+            <div class="projects__bg">
+                <div class="projects">
+                    <h2 class="projects__title title">My recent <span>works</span></h2>
+                    <div class="projects__cards">
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img1.jpg" alt="1t project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Graphic Designer</h4>
+                                <p class="card__text">This's the first project. There are button, links and svg wave.</p>
+                                <a href="https://github.com/mary-kosar/Designer" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img2.png" alt="2d project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Short developer</h4>
+                                <p class="card__text">The second project depicts front-end developer short portfolio.</p>
+                                <a href="https://github.com/mary-kosar/front-end" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img3.png" alt="3d project">
+                            <div class="card__desc">
+                                <h4 class="card__title">The Power of Simplicity</h4>
+                                <p class="card__text">This is the third project. And it has a simple adaptation, hover effect and burger.</p>
+                                <a href="https://github.com/mary-kosar/apple" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+    
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img4.png" alt="4th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Fashion shop</h4>
+                                <p class="card__text">This project is based on display: grid. It consists of a sidebar, navigation, and main content. Adaptation is also applied with hover effect.</p>
+                                <a href="https://github.com/mary-kosar/shop" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img5.png" alt="5th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Watch shop</h4>
+                                <p class="card__text">The project has hover effect, order, adaptation.</p>
+                                <a href="https://github.com/mary-kosar/watch_shop" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img6.png" alt="6th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">UI Kit</h4>
+                                <p class="card__text">This is a basic UI kit. Which has different types of inputs.</p>
+                                <a href="https://github.com/mary-kosar/UI_kit" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+    
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img7.png" alt="7th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Generic template</h4>
+                                <p class="card__text">This is a generic template. it can be taken as the basis for the main page. Classes are formed according to BEM methodology</p>
+                                <a href="https://github.com/mary-kosar/BEM" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img8.png" alt="8th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Row with col</h4>
+                                <p class="card__text">The first attempt to use the row with the col was made in this project.</p>
+                                <a href="https://github.com/mary-kosar/column" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img9.png" alt="9th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Be aware</h4>
+                                <p class="card__text">Css burger, flex blocks, adaptation were made in this project.</p>
+                                <a href="https://github.com/mary-kosar/women" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+    
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img10.png" alt="10th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Bootstrap</h4>
+                                <p class="card__text">The first steps in bootstrap were made in this project.</p>
+                                <a href="https://github.com/mary-kosar/bootstrap" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img11.png" alt="11th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">Laboratory</h4>
+                                <p class="card__text">SCSS, owl carousel, and js burger were applied in this project for the first time.</p>
+                                <a href="https://github.com/mary-kosar/quiro-diagnostic-center" class="card__btn btn__primary">Details</a>
+                            </div>                        
+                        </div>
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img12.png" alt="12th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">King</h4>
+                                <p class="card__text">This is a big project with headear, 6 blocks and footer.</p>
+                                <a href="https://github.com/mary-kosar/king_project" class="card__btn btn__primary">Details</a>
+                            </div> 
+                        </div>
+    
+                        <div class="card">
+                            <img class="card__img" src="img/projects/img13.png" alt="13th project">
+                            <div class="card__desc">
+                                <h4 class="card__title">UX Design</h4>
+                                <p class="card__text">Colorful project with js carousel and js accordion. </p>
+                                <a href="https://github.com/mary-kosar/logoipsum" class="card__btn btn__primary">Details</a>
+                        </div> 
                     </div>
                 </div>
             </div>
+            
         </div>        
     </section>
+    <!-- contacts -->
     <section class="container pd-x">
+        <a name="contact"></a>
         <div class="contacts">
             <div class="contacts__info">
                 <h3 class="contacts__title title">Contact <span>me</span></h3>
@@ -155,13 +252,14 @@
             </div>
         </div>
     </section>
+    <!-- footer -->
     <div class="container">
         <footer class="footer">
             <ul class="footer__nav nav">
-                <li class="nav__li"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__li"><a href="#" class="nav__link">About me</a></li>
-                <li class="nav__li"><a href="#" class="nav__link">Projects</a></li>
-                <li class="nav__li"><a href="#" class="nav__link">Contact me</a></li>
+                <li class="nav__li"><a href="https://github.com/mary-kosar" class="nav__link">Home</a></li>
+                <li class="nav__li"><a href="#about__me" class="nav__link">About me</a></li>
+                <li class="nav__li"><a href="#project" class="nav__link">Projects</a></li>
+                <li class="nav__li"><a href="#contact" class="nav__link">Contact me</a></li>
             </ul>
         </footer>
     </div>

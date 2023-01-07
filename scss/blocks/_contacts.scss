@@ -4,6 +4,12 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    @include desktop-small {
+        justify-content: center;
+    }
+    @include tablet-small {
+        padding: 50px 0;
+    }
 	&__title {
         margin-bottom: 55px;
         padding-left: 10px;
@@ -29,6 +35,9 @@
             position: absolute;
             top: 176px;
             right: 154px;
+        }
+        @include desktop-small {
+            display: none;
         }
 	}
 }
