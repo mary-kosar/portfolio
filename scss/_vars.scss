@@ -1,0 +1,23 @@
+$font: 'Poppins', sans-serif;
+
+$c-primary: rgba(0, 173, 181, 1);
+$c-white: #ffffff;
+$c-body: rgba(238, 238, 238, 1);
+$c-body-light: rgba(238, 238, 238, 0.75);
+
+$c-bg-body: #222831;
+$c-bg-card: rgba(57, 62, 70, 0.5);
+$c-bg-btn: rgba(57, 62, 70, 0.75);
+
+$c-border: rgba(238, 238, 238, 0.1);
+
+$b-radius: 24px;
+$b-radius-card: 16px;
+
+$transition: 0.2s all ease-in-out;
+
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;

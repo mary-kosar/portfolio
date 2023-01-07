@@ -1,0 +1,41 @@
+.about {
+    padding-top: 230px;
+    padding-bottom: 81px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    border-bottom: 1px solid $c-border;
+    &__info {
+        padding-left: 16px;
+        padding-right: 27px;
+        max-width: 432px;
+        position: relative;
+        &__music {
+            position: absolute;
+            top: -123px;
+        }
+        &__light {
+            position: absolute;
+            right: 0;
+            top: 26px;
+        }
+	}	
+    &__title {
+        padding-top: 26px;
+	}
+	&__desc {
+        @include text($font, 400, 18px, 27px, $c-body-light);
+	}	
+	&__img {
+        position: relative;
+        &__bg {
+            position: absolute;
+            right: 16px;
+        }
+        &__body {
+            position: absolute;
+            top: 224px;
+            right: 160px;
+        }
+	}
+}

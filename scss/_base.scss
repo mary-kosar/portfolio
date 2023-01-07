@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  color: $c-body;
+}
+html,
+body {
+  &._overflow {
+    overflow: hidden;
+  }
+}
+a {
+  color: $c-white;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $c-bg-body;
+}
+.pd-x {
+  padding-left: 96px;
+  padding-right: 96px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.btn {
+	&__primary {
+    background: $c-primary;
+    border-radius: $b-radius;
+    padding: 10px 32px;
+    max-width: 223px;
+    display: flex;
+    align-items: center;
+    &__primary__link {
+      display: inline-block;
+      @include text($font, 700, 18px, 27px, $c-body);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+	}
+	&__dark {
+    background: $c-bg-btn;
+    backdrop-filter: blur(2px);
+    border-radius: $b-radius;
+    padding: 10px 32px;
+    max-width: 223px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__dark__link {
+      display: inline-block;
+      @include text($font, 700, 18px, 27px, $c-body);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+	}
+}
+.title {
+  @include text($font, 700, 64px, 96px, $c-white);
+  span {
+    color: $c-primary;
+  }
+}

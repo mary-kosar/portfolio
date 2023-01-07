@@ -1,0 +1,54 @@
+.projects-wrapper {
+    padding-top: 132px;
+}
+.projects {
+    padding: 179px 121px 151px 140px;
+    background-image: url("img/bg/bg3.png");
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 48px;
+    }
+}
+.card {
+    padding: 50px;
+    position: relative; 
+    background: $c-bg-card;
+    backdrop-filter: blur(2px);
+    border-radius: $b-radius-card;
+    cursor: pointer;
+    &__img{
+        width: 100%;
+        border-radius: $b-radius-card;
+
+    }
+	&__desc {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: $transition; 
+        height: 100%;
+        padding: 25px;
+        border-radius: $b-radius-card;
+	}
+	&__title {
+        @include text($font, 700, 16px, 24px, $c-body);
+        margin-bottom: 7px;
+	}
+	&__text {
+        @include text($font, 400, 14px, 21px, $c-body);
+        margin-bottom: 26px;
+	}
+	&__btn {
+        display: inline-block;
+	}
+    &:hover &__desc {
+        opacity: 1;
+        background: rgba(57, 62, 70, 0.5);
+        backdrop-filter: blur(7.5px);
+    }
+}

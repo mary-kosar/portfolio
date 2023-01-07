@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio Kos</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+</head>
+<body id="body">
+    <!-- header -->
+    <section class="header__wrapper">
+        <div class="container pd-x">
+            <header class="header">
+                <a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+                <div class="header__burger">
+                    <span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+                        menu
+                    </span>
+                </div>
+                <nav id="nav" class="header-nav">
+                    <ul class="header-nav__ul">
+                        <li class="header-nav__li">
+                            <a href="#" class="header-nav__a _active">Home</a>
+                        </li>
+                        <li class="header-nav__li">
+                            <a href="#" class="header-nav__a">About Me</a>
+                        </li>
+                        <li class="header-nav__li">
+                            <a href="#" class="header-nav__a">Projects</a>
+                        </li>
+                        <li class="header-nav__li">
+                            <a href="#" class="header-nav__a">Contact me</a>
+                        </li>
+                    </ul>
+                    <span id="icon-close" onclick="navToggle()" class="material-icons">
+                        close
+                    </span>
+                </nav>
+            </header>
+        </div>
+    </section>	
+    <!-- main-screen -->
+    <section class="container pd-x">
+        <div class="main-screen">
+            <div class="main-screen__info">
+                <img class="main-screen__arrow" src="img/bg/arrow.png" alt="arrow">
+                <div class="main-screen__title">
+                    <h1 class="main-screen__title__name">HTML/CSS 
+                        <br><span>DEVELOPER</span> 
+                    </h1>
+                </div>
+                <div class="main-screen__btn btn">
+                    <div class="btn__primary">
+                        <a href="#" class="btn__primary__link">Hire me</a>
+                    </div>
+                    <div class="btn__dark">
+                        <a href="#" class="btn__dark__link">Download CV</a>
+                        <span class="material-symbols-outlined">
+                            download
+                        </span>
+                    </div>
+                </div>
+                <div class="main-screen__scroll">
+                    <span class="material-symbols-outlined">
+                        south
+                    </span>
+                </div>
+            </div>
+            <img class="main-screen__bg" src="img/bg/bg1.png" alt="relax">
+            <img class="main-screen__body" src="img/bg/bg_body1.png" alt="body">
+        </div>
+    </section>
+    <!-- about me -->
+    <section class="container pd-x">
+        <div class="about">
+            <div class="about__info">
+                <div class="about__info__img">
+                    <img class="about__info__music" src="img/bg/music.png" alt="music">
+                    <img class="about__info__light" src="img/bg/lightbulb.png" alt="light">
+                </div>
+                <div class="about__title title">About <span>me</span></div>
+                <div class="about__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </div>                
+            </div>
+            <div class="about__img">
+                <img src="img/bg/bg2.png" alt="relax" class="about__img__bg">
+                <img src="img/bg/bg_body2.png" alt="body" class="about__img__body">
+            </div>
+        </div>
+    </section>
+    <!-- projects -->
+    <section class="container">
+        <div class="projects-wrapper">
+            <div class="projects">
+                <h2 class="projects__title title">My recent <span>works</span></h2>
+                <div class="projects__cards">
+                    <div class="card">
+                        <img class="card__img" src="img/projects/img19.png" alt="19th project">
+                        <div class="card__desc">
+                            <h4 class="card__title">Learn UX Design</h4>
+                            <p class="card__text">This project includes burger, slider, accordion with js</p>
+                            <a href="#" class="card__btn btn__primary">Details</a>
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="img/projects/img19.png" alt="19th project">
+                        <div class="card__desc">
+                            <h4 class="card__title">Learn UX Design</h4>
+                            <p class="card__text">This project includes burger, slider, accordion with js</p>
+                            <a href="#" class="card__btn btn__primary">Details</a>
+                        </div>                        
+                    </div>
+                    <div class="card">
+                        <img class="card__img" src="img/projects/img19.png" alt="19th project">
+                        <div class="card__desc">
+                            <h4 class="card__title">Learn UX Design</h4>
+                            <p class="card__text">This project includes burger, slider, accordion with js</p>
+                            <a href="#" class="card__btn btn__primary">Details</a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section class="container pd-x">
+        <div class="contacts">
+            <div class="contacts__info">
+                <h3 class="contacts__title title">Contact <span>me</span></h3>
+                <ul class="contacts__list">
+                    <li class="contacts__link">
+                        <div class="contacts__soc">Telegram</div>
+                        <div class="contacts__soc__link"><a href="#">@kosar_mary</a></div>
+                    </li>
+                    <li class="contacts__link">
+                        <div class="contacts__soc">Github</div>
+                        <div class="contacts__soc__link"><a href="https://github.com/mary-kosar">https://github.com/mary-kosar</a></div>
+                    </li>
+                    <li class="contacts__link">
+                        <div class="contacts__soc">E-mail</div>
+                        <div class="contacts__soc__link"><a href="mailto:mary7kosar@gmail.com">mary7kosar@gmail.com</a></div>
+                    </li>
+                    <li class="contacts__link">
+                        <div class="contacts__soc">Linkedin</div>
+                        <div class="contacts__soc__link"><a href="https://www.linkedin.com/in/mary-kosar/">https://www.linkedin.com/in/mary-kosar/</a></div>
+                    </li>
+                </ul>                
+            </div>
+            <div class="contacts__img">
+                <img src="img/bg/arrow2.png" alt="relax" class="contacts__img__arrow">
+                <img src="img/bg/bg_body3.png" alt="body" class="contacts__img__body">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <footer class="footer">
+            <ul class="footer__nav nav">
+                <li class="nav__li"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__li"><a href="#" class="nav__link">About me</a></li>
+                <li class="nav__li"><a href="#" class="nav__link">Projects</a></li>
+                <li class="nav__li"><a href="#" class="nav__link">Contact me</a></li>
+            </ul>
+        </footer>
+    </div>
+	<script src="script.js"></script>
+</body>
+
+</html>

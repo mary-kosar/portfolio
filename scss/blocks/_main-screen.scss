@@ -1,0 +1,89 @@
+.main-screen {
+    padding-top: 211px;
+    padding-bottom: 64px;
+    position: relative;
+    display: flex;
+    @include desktop-small {
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+	&__info {
+        padding-left: 84px;
+        max-width: 586px;
+        position: relative;
+        @include desktop-small {
+                padding-top: 90px;
+            }
+	}
+	&__arrow {
+        position: absolute;
+        left: 0;
+        top: 45px;
+        @include desktop-small {
+                top: 125px;
+            }
+	}
+	&__title {        
+            padding-bottom: 48px;
+            &__name {
+                @include text($font, 700, 96px, 96px, $c-white);
+                span {
+                    color: $c-primary;
+                }
+                @include tablet-small {
+                        font-size: 46px;
+                        line-height: 46px;
+                }
+            }
+	}
+	&__btn {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 243px;
+	}
+    &__scroll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 96px;
+        width: 96px;
+        background: $c-bg-btn;
+        cursor: pointer;
+        .material-symbols-outlined {  
+            color: $c-body-light;
+            font-size: 45px;
+         }
+    }
+	&__bg {
+             max-width: 514px;
+             max-height: 514px;
+             position: absolute;
+             right: 0;
+             & img {
+                width: 100%;
+             }
+             @include desktop-small {
+                position: relative;
+                margin: 0 auto;
+             }
+	}
+	&__body {
+             max-width: 400px;
+             max-height: 472px;
+             position: absolute;
+             right: 135px;
+             top: 355px;
+             @include desktop-small {
+                top: 183px;
+                left: -33px;
+                margin: 0 auto;
+             }
+             & img {
+                width: 100%;
+             }
+	}
+        
+}
+
+
