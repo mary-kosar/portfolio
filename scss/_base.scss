@@ -86,9 +86,11 @@ img {
 }
 .header__wrapper,
 .about__wrapper {
-    background-color: $c-bg-body;
-    border-bottom: 1px solid $c-border;
-
+  background-color: $c-bg-body;
+  border-bottom: 1px solid $c-border;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 .vl {
   border: 1px solid rgba(238, 238, 238, 0.1);
