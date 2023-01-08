@@ -13,6 +13,20 @@
             display: block;
         }
     }
+    .swirl-in-fwd {
+        animation: swirl-in-fwd 0.6s ease-out both;
+    }
+    @keyframes swirl-in-fwd {
+        0% {
+          transform: rotate(-540deg) scale(0);
+          opacity: 0;
+        }
+        100% {
+          transform: rotate(0) scale(1);
+          opacity: 1;
+        }
+    }
+      
 }
 .header-nav {
     .material-icons {
@@ -64,4 +78,14 @@
     &._active {
         transform: translateX(0);
     }
+}
+.header__wrapper {
+    @include tablet-small {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    
 }

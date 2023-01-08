@@ -14,6 +14,9 @@ body {
     overflow: hidden;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: $c-white;
   text-decoration: none;
@@ -50,11 +53,16 @@ img {
     max-width: 223px;
     display: flex;
     align-items: center;
+    transition: $transition;
+    cursor: pointer;
     &__primary__link {
       display: block;
       height: 100%;
       @include text($font, 700, 18px, 27px, $c-body);
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    &:hover {
+      transform: translateY(-10px);
     }
 	}
 	&__dark {
@@ -66,11 +74,16 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
+    transition: $transition;
     &__dark__link {
       display: block;
       height: 100%;
       @include text($font, 700, 18px, 27px, $c-body);
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    &:hover {
+      transform: translateY(-10px);
     }
 	}
 }

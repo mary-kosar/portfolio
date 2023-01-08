@@ -8,6 +8,9 @@
         flex-direction: column;
         align-items: center;
     }
+    @include tablet-small{
+        margin-top: 59px;
+    }
 	&__info {
         padding-left: 84px;
         max-width: 586px;
@@ -66,6 +69,7 @@
         width: 96px;
         background: $c-bg-btn;
         cursor: pointer;
+        transition: $transition;
         @include tablet-small {
             height: 40px;
             width: 40px;
@@ -76,7 +80,10 @@
             @include tablet-small {
                 font-size: 30px;
             }
-         }
+        }
+        &:hover {
+            width: 86px;
+        }
     }
 	&__bg {
              max-width: 514px;
@@ -104,3 +111,31 @@
         }            
 	}        
 }
+// animista
+.vibrate-1 {
+	animation: vibrate-1 0.7s linear 5 both;
+}
+@keyframes vibrate-1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+
+  
+  
